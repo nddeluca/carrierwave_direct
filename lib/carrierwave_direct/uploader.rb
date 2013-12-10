@@ -97,6 +97,7 @@ module CarrierWaveDirect
     # the key.
     def key=(new_key)
       return if new_key.blank?
+      return if new_key == key
 
       key_parts = new_key.split("/")
 
